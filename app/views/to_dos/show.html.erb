@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @to_do.owner_id %>
+</p>
+
+<p>
+  <strong>Folder:</strong>
+  <%= @to_do.folder_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @to_do.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @to_do.description %>
+</p>
+
+<%= link_to 'Edit', edit_to_do_path(@to_do) %> |
+<%= link_to 'Back', to_dos_path %>
