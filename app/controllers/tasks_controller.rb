@@ -5,11 +5,20 @@ class TasksController < ApplicationController
   # GET /tasks.json
   def index
     @tasks = Task.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @tasks }
+    end
   end
 
   # GET /tasks/1
   # GET /tasks/1.json
   def show
+    respond_to do |format|
+      format.html # show.html.erb
+      format.json { render json: @task }
+    end
   end
 
   # GET /tasks/new
@@ -29,9 +38,9 @@ class TasksController < ApplicationController
     respond_to do |format|
       if @task.save
         format.html { redirect_to @task, notice: 'Task was successfully created.' }
-        format.json { render :show, status: :created, location: @task }
+        format.json { render json: @task, status: :created }
       else
-        format.html { render :new }
+        format.html { render action: 'new' }
         format.json { render json: @task.errors, status: :unprocessable_entity }
       end
     end
@@ -43,9 +52,9 @@ class TasksController < ApplicationController
     respond_to do |format|
       if @task.update(task_params)
         format.html { redirect_to @task, notice: 'Task was successfully updated.' }
-        format.json { render :show, status: :ok, location: @task }
+        format.json { head :no_content }
       else
-        format.html { render :edit }
+        format.html { render action: 'edit' }
         format.json { render json: @task.errors, status: :unprocessable_entity }
       end
     end
@@ -56,7 +65,7 @@ class TasksController < ApplicationController
   def destroy
     @task.destroy
     respond_to do |format|
-      format.html { redirect_to tasks_url, notice: 'Task was successfully destroyed.' }
+      format.html { redirect_to tasks_url }
       format.json { head :no_content }
     end
   end
@@ -69,6 +78,6 @@ class TasksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def task_params
-      params.require(:task).permit(:owner_id, :list_id, :name, :description, :priority, :finished_at)
+      params.require(:task).permit(:user_id, :list_id, :priority, :name, :description, :completed, :completed_at)
     end
 end

@@ -4514,3 +4514,1169 @@ Started GET "/folders.json" for ::1 at 2015-02-16 09:17:37 +0000
 Processing by FoldersController#index as JSON
   [1m[35mFolder Load (0.2ms)[0m  SELECT "folders".* FROM "folders"
 Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-02-16 09:27:05 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 74ms (Views: 72.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/folders.css?body=1" for ::1 at 2015-02-16 09:27:05 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2015-02-16 09:27:05 +0000
+
+
+Started GET "/assets/tasks.css?body=1" for ::1 at 2015-02-16 09:27:05 +0000
+
+
+Started GET "/assets/to_dos.css?body=1" for ::1 at 2015-02-16 09:27:05 +0000
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-02-16 09:27:05 +0000
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-02-16 09:27:05 +0000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-02-16 09:27:05 +0000
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-02-16 09:27:05 +0000
+
+
+Started GET "/assets/react.js?body=1" for ::1 at 2015-02-16 09:27:05 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-02-16 09:27:05 +0000
+
+
+Started GET "/assets/react_ujs.js?body=1" for ::1 at 2015-02-16 09:27:05 +0000
+
+
+Started GET "/assets/components/to_do.js?body=1" for ::1 at 2015-02-16 09:27:05 +0000
+
+
+Started GET "/assets/components.js?body=1" for ::1 at 2015-02-16 09:27:05 +0000
+
+
+Started GET "/assets/components/folders.js?body=1" for ::1 at 2015-02-16 09:27:05 +0000
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-02-16 09:27:05 +0000
+
+
+Started GET "/folders.json" for ::1 at 2015-02-16 09:27:06 +0000
+Processing by FoldersController#index as JSON
+  [1m[36mFolder Load (0.6ms)[0m  [1mSELECT "folders".* FROM "folders"[0m
+Completed 200 OK in 69ms (Views: 1.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2015-02-16 09:27:10 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 147ms (Views: 145.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/folders.json" for ::1 at 2015-02-16 09:27:11 +0000
+Processing by FoldersController#index as JSON
+  [1m[35mFolder Load (0.2ms)[0m  SELECT "folders".* FROM "folders"
+Completed 200 OK in 3ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2015-02-16 10:10:09 +0000
+
+ExecJS::ProgramError (Error: Parse Error: Line 3: Unexpected token :
+  (in /Users/vladsmarteditors/Projects/testing/react-rails-todo/app/assets/javascripts/components/to_dos/_to_do_box.js.jsx)):
+  execjs (2.3.0) lib/execjs/external_runtime.rb:67:in `extract_result'
+  execjs (2.3.0) lib/execjs/external_runtime.rb:32:in `exec'
+  execjs (2.3.0) lib/execjs/external_runtime.rb:21:in `eval'
+  execjs (2.3.0) lib/execjs/external_runtime.rb:39:in `call'
+  /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/bundler/gems/react-rails-a05c5af05031/lib/react/jsx.rb:33:in `transform'
+  /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/bundler/gems/react-rails-a05c5af05031/lib/react/jsx/template.rb:13:in `evaluate'
+  tilt (1.4.1) lib/tilt/template.rb:103:in `render'
+  sprockets (2.12.3) lib/sprockets/context.rb:197:in `block in evaluate'
+  sprockets (2.12.3) lib/sprockets/context.rb:194:in `each'
+  sprockets (2.12.3) lib/sprockets/context.rb:194:in `evaluate'
+  sprockets (2.12.3) lib/sprockets/processed_asset.rb:12:in `initialize'
+  sprockets (2.12.3) lib/sprockets/base.rb:374:in `new'
+  sprockets (2.12.3) lib/sprockets/base.rb:374:in `block in build_asset'
+  sprockets (2.12.3) lib/sprockets/base.rb:395:in `circular_call_protection'
+  sprockets (2.12.3) lib/sprockets/base.rb:373:in `build_asset'
+  sprockets (2.12.3) lib/sprockets/index.rb:94:in `block in build_asset'
+  sprockets (2.12.3) lib/sprockets/caching.rb:58:in `cache_asset'
+  sprockets (2.12.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.12.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.12.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.12.3) lib/sprockets/processed_asset.rb:111:in `block in resolve_dependencies'
+  sprockets (2.12.3) lib/sprockets/processed_asset.rb:105:in `each'
+  sprockets (2.12.3) lib/sprockets/processed_asset.rb:105:in `resolve_dependencies'
+  sprockets (2.12.3) lib/sprockets/processed_asset.rb:97:in `build_required_assets'
+  sprockets (2.12.3) lib/sprockets/processed_asset.rb:16:in `initialize'
+  sprockets (2.12.3) lib/sprockets/base.rb:374:in `new'
+  sprockets (2.12.3) lib/sprockets/base.rb:374:in `block in build_asset'
+  sprockets (2.12.3) lib/sprockets/base.rb:395:in `circular_call_protection'
+  sprockets (2.12.3) lib/sprockets/base.rb:373:in `build_asset'
+  sprockets (2.12.3) lib/sprockets/index.rb:94:in `block in build_asset'
+  sprockets (2.12.3) lib/sprockets/caching.rb:58:in `cache_asset'
+  sprockets (2.12.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.12.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.12.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.12.3) lib/sprockets/bundled_asset.rb:37:in `init_with'
+  sprockets (2.12.3) lib/sprockets/asset.rb:24:in `from_hash'
+  sprockets (2.12.3) lib/sprockets/caching.rb:54:in `cache_asset'
+  sprockets (2.12.3) lib/sprockets/index.rb:93:in `build_asset'
+  sprockets (2.12.3) lib/sprockets/base.rb:287:in `find_asset'
+  sprockets (2.12.3) lib/sprockets/index.rb:61:in `find_asset'
+  sprockets (2.12.3) lib/sprockets/environment.rb:75:in `find_asset'
+  sprockets (2.12.3) lib/sprockets/base.rb:295:in `[]'
+  /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/bundler/gems/react-rails-a05c5af05031/lib/react/rails/railtie.rb:70:in `block (3 levels) in <class:Railtie>'
+  /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/bundler/gems/react-rails-a05c5af05031/lib/react/rails/railtie.rb:69:in `map'
+  /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/bundler/gems/react-rails-a05c5af05031/lib/react/rails/railtie.rb:69:in `block (2 levels) in <class:Railtie>'
+  /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/bundler/gems/react-rails-a05c5af05031/lib/react/renderer.rb:73:in `call'
+  /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/bundler/gems/react-rails-a05c5af05031/lib/react/renderer.rb:73:in `setup_combined_js'
+  /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/bundler/gems/react-rails-a05c5af05031/lib/react/renderer.rb:78:in `reset_combined_js!'
+  /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/bundler/gems/react-rails-a05c5af05031/lib/react/renderer.rb:20:in `setup!'
+  /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/bundler/gems/react-rails-a05c5af05031/lib/react/rails/railtie.rb:76:in `block (2 levels) in <class:Railtie>'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:441:in `instance_exec'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:441:in `block in make_lambda'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:189:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:189:in `block in simple'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:190:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:190:in `block in simple'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:190:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:190:in `block in simple'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_prepare_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:83:in `prepare!'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:71:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/vladsmarteditors/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /Users/vladsmarteditors/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /Users/vladsmarteditors/.rvm/rubies/ruby-2.0.0-p451/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.6ms)
+
+
+Started GET "/" for ::1 at 2015-02-16 10:10:36 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 355ms
+
+ActionView::Template::Error (Error: Parse Error: Line 12: Unexpected token :
+  (in /Users/vladsmarteditors/Projects/testing/react-rails-todo/app/assets/javascripts/components/to_dos/_to_do_box.js.jsx)):
+    3: <head>
+    4:   <title>ToDoList</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3174000521214685680_2162288420'
+  app/controllers/application_controller.rb:9:in `index'
+
+
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.1ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-16 10:11:26 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 236ms
+
+ActionView::Template::Error (Error: Parse Error: Line 12: Unexpected token :
+  (in /Users/vladsmarteditors/Projects/testing/react-rails-todo/app/assets/javascripts/components/to_dos/_to_do_box.js.jsx)):
+    3: <head>
+    4:   <title>ToDoList</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3174000521214685680_2162288420'
+  app/controllers/application_controller.rb:9:in `index'
+
+
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.8ms)
+
+
+Started GET "/" for ::1 at 2015-02-16 10:11:45 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 584ms
+
+ActionView::Template::Error (Error: Parse Error: Line 1: Unexpected identifier
+  (in /Users/vladsmarteditors/Projects/testing/react-rails-todo/app/assets/javascripts/components/to_dos/_to_do_list.js.jsx)):
+    3: <head>
+    4:   <title>ToDoList</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3174000521214685680_2162288420'
+  app/controllers/application_controller.rb:9:in `index'
+
+
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.7ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-16 10:12:10 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 194ms
+
+ActionView::Template::Error (Error: Parse Error: Line 2: Unexpected token function
+  (in /Users/vladsmarteditors/Projects/testing/react-rails-todo/app/assets/javascripts/components/to_dos/_to_do_list.js.jsx)):
+    3: <head>
+    4:   <title>ToDoList</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3174000521214685680_2162288420'
+  app/controllers/application_controller.rb:9:in `index'
+
+
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (60.6ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.3ms)
+
+
+Started GET "/" for ::1 at 2015-02-16 10:12:14 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 200ms
+
+ActionView::Template::Error (Error: Parse Error: Line 2: Unexpected token function
+  (in /Users/vladsmarteditors/Projects/testing/react-rails-todo/app/assets/javascripts/components/to_dos/_to_do_list.js.jsx)):
+    3: <head>
+    4:   <title>ToDoList</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3174000521214685680_2162288420'
+  app/controllers/application_controller.rb:9:in `index'
+
+
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (54.6ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.7ms)
+
+
+Started GET "/" for ::1 at 2015-02-16 10:14:46 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.1ms)
+Completed 500 Internal Server Error in 224ms
+
+ActionView::Template::Error (Error: Parse Error: Line 2: Unexpected token function
+  (in /Users/vladsmarteditors/Projects/testing/react-rails-todo/app/assets/javascripts/components/to_dos/_to_do_list.js.jsx)):
+    3: <head>
+    4:   <title>ToDoList</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+    9: <body>
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3174000521214685680_2162288420'
+  app/controllers/application_controller.rb:9:in `index'
+
+
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.7ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.6ms)
+
+
+Started GET "/" for ::1 at 2015-02-16 10:14:59 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 538ms (Views: 537.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/to_dos.css?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/tasks.css?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/folders.css?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/react.js?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/react_ujs.js?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/components/to_do.js?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do.js?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/components/folders.js?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_box.js?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_form.js?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_list.js?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/components.js?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-02-16 10:15:00 +0000
+
+
+Started GET "/" for ::1 at 2015-02-16 10:16:36 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (ConnectionPool::PoolShuttingDownError):
+    2: 
+    3: <div id="todos"></div>
+    4: 
+    5: <%= react_component('CommentBox',
+    6:                     {:presenter => @presenter.to_json, :imgSrc => image_path("gundam.jpg")},
+    7:                     {:prerender => true}) %>
+  app/views/layouts/index.html.erb:5:in `_app_views_layouts_index_html_erb___1735320185801608182_2170759240'
+  app/controllers/application_controller.rb:9:in `index'
+
+
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.3ms)
+
+
+Started GET "/" for ::1 at 2015-02-16 10:16:42 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (ConnectionPool::PoolShuttingDownError):
+    2: 
+    3: <div id="todos"></div>
+    4: 
+    5: <%= react_component('ToDoBox',
+    6:                     {:presenter => @presenter.to_json, :imgSrc => image_path("gundam.jpg")},
+    7:                     {:prerender => true}) %>
+  app/views/layouts/index.html.erb:5:in `_app_views_layouts_index_html_erb___1735320185801608182_2163124180'
+  app/controllers/application_controller.rb:9:in `index'
+
+
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/vladsmarteditors/.rvm/gems/ruby-2.0.0-p451/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.6ms)
+
+
+Started GET "/" for ::1 at 2015-02-16 10:16:50 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 137ms (Views: 136.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/folders.css?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/tasks.css?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/to_dos.css?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/react.js?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/react_ujs.js?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/components/folders.js?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/components/to_do.js?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do.js?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_box.js?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_form.js?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_list.js?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/components.js?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-02-16 10:16:50 +0000
+
+
+Started GET "/" for ::1 at 2015-02-16 10:17:00 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 96ms (Views: 94.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/folders.css?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/to_dos.css?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/tasks.css?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/react_ujs.js?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/components/to_do.js?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/components/folders.js?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do.js?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_box.js?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_form.js?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_list.js?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/components.js?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/assets/react.js?body=1" for ::1 at 2015-02-16 10:17:00 +0000
+
+
+Started GET "/" for ::1 at 2015-02-16 10:17:52 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 346ms (Views: 344.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/folders.css?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/tasks.css?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/react.js?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/components/folders.js?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/react_ujs.js?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/to_dos.css?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/components/to_do.js?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do.js?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_box.js?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_list.js?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/components.js?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-02-16 10:17:52 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_form.js?body=1" for ::1 at 2015-02-16 10:17:53 +0000
+
+
+Started GET "/" for ::1 at 2015-02-16 10:18:06 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 275ms (Views: 274.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/folders.css?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/to_dos.css?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/tasks.css?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/react.js?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/react_ujs.js?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/components/folders.js?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/components/to_do.js?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do.js?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_box.js?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_form.js?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_list.js?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/components.js?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-02-16 10:18:06 +0000
+
+
+Started GET "/" for ::1 at 2015-02-16 10:18:07 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 138ms (Views: 137.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/folders.css?body=1" for ::1 at 2015-02-16 10:18:07 +0000
+
+
+Started GET "/assets/to_dos.css?body=1" for ::1 at 2015-02-16 10:18:07 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2015-02-16 10:18:07 +0000
+
+
+Started GET "/assets/tasks.css?body=1" for ::1 at 2015-02-16 10:18:07 +0000
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-02-16 10:18:07 +0000
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-02-16 10:18:07 +0000
+
+
+Started GET "/assets/react.js?body=1" for ::1 at 2015-02-16 10:18:07 +0000
+
+
+Started GET "/assets/react_ujs.js?body=1" for ::1 at 2015-02-16 10:18:07 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-02-16 10:18:08 +0000
+
+
+Started GET "/assets/components/folders.js?body=1" for ::1 at 2015-02-16 10:18:08 +0000
+
+
+Started GET "/assets/components/to_do.js?body=1" for ::1 at 2015-02-16 10:18:08 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do.js?body=1" for ::1 at 2015-02-16 10:18:08 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_box.js?body=1" for ::1 at 2015-02-16 10:18:08 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_list.js?body=1" for ::1 at 2015-02-16 10:18:08 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_form.js?body=1" for ::1 at 2015-02-16 10:18:08 +0000
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-02-16 10:18:08 +0000
+
+
+Started GET "/assets/components.js?body=1" for ::1 at 2015-02-16 10:18:08 +0000
+
+
+Started GET "/" for ::1 at 2015-02-16 10:18:30 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 262ms (Views: 261.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/folders.css?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/tasks.css?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/to_dos.css?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/react_ujs.js?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/react.js?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/components/folders.js?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/components/to_do.js?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do.js?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_form.js?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_list.js?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/components.js?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_box.js?body=1" for ::1 at 2015-02-16 10:18:31 +0000
+
+
+Started GET "/" for ::1 at 2015-02-16 10:37:01 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 113ms (Views: 112.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/folders.css?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/tasks.css?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/to_dos.css?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/react.js?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/react_ujs.js?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/components/folders.js?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do.js?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_box.js?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/components/to_do.js?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_form.js?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_list.js?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/components.js?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-02-16 10:37:01 +0000
+
+
+Started GET "/" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 63ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/folders.css?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/to_dos.css?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/react.js?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/react_ujs.js?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/components/folders.js?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/components/to_do.js?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do.js?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_box.js?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_form.js?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_list.js?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/components.js?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-02-16 10:37:15 +0000
+
+
+Started GET "/" for ::1 at 2015-02-16 11:02:11 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 306ms (Views: 290.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/folders.css?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/to_dos.css?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/tasks.css?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/react.js?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/react_ujs.js?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/components/folders.js?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/components/to_do.js?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_list.js?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_box.js?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do.js?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_form.js?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/components.js?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-02-16 11:02:12 +0000
+  [1m[36m (9.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20150216073658)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/vladsmarteditors/Projects/testing/react-rails-todo/db/migrate/20150216073658_create_users.rb:8)
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "first_name" varchar, "last_name" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150216073658"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateLists (20150216110715)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "lists" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer NOT NULL, "name" varchar NOT NULL, "description" text, "tasks_count" integer DEFAULT 0, "completed" boolean DEFAULT 'f', "completed_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150216110715"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Migrating to CreateTasks (20150216111208)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "list_id" integer NOT NULL, "priority" integer DEFAULT 1, "name" varchar NOT NULL, "description" text, "completed" boolean DEFAULT 'f', "completed_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150216111208"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2015-02-16 11:14:59 +0000
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 77ms (Views: 76.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2015-02-16 11:14:59 +0000
+
+
+Started GET "/assets/tasks.css?body=1" for ::1 at 2015-02-16 11:14:59 +0000
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-02-16 11:14:59 +0000
+
+
+Started GET "/assets/components/folders.js?body=1" for ::1 at 2015-02-16 11:14:59 +0000
+
+
+Started GET "/assets/react.js?body=1" for ::1 at 2015-02-16 11:14:59 +0000
+
+
+Started GET "/assets/components/to_do.js?body=1" for ::1 at 2015-02-16 11:14:59 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-02-16 11:14:59 +0000
+
+
+Started GET "/assets/react_ujs.js?body=1" for ::1 at 2015-02-16 11:14:59 +0000
+
+
+Started GET "/assets/components.js?body=1" for ::1 at 2015-02-16 11:14:59 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do.js?body=1" for ::1 at 2015-02-16 11:14:59 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_form.js?body=1" for ::1 at 2015-02-16 11:14:59 +0000
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-02-16 11:14:59 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_list.js?body=1" for ::1 at 2015-02-16 11:14:59 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_box.js?body=1" for ::1 at 2015-02-16 11:14:59 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mList Load (0.6ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  [1m[35mTask Load (0.5ms)[0m  SELECT "tasks".* FROM "tasks"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "users" ("email", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "vlad@smarteditors.co.uk"], ["first_name", "Vlad"], ["last_name", "Radulescu"], ["created_at", "2015-02-16 11:22:47.303813"], ["updated_at", "2015-02-16 11:22:47.303813"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "kevin@smarteditors.co.uk"], ["first_name", "Kevin"], ["last_name", "Karmody"], ["created_at", "2015-02-16 11:22:47.310328"], ["updated_at", "2015-02-16 11:22:47.310328"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "hannah@smarteditors.co.uk"], ["first_name", "Hannah"], ["last_name", "Lewis"], ["created_at", "2015-02-16 11:22:47.312860"], ["updated_at", "2015-02-16 11:22:47.312860"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "vlad@smarteditors.co.uk"]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateJoinTableTasksUsers (20150216112406)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "tasks_users" ("task_id" integer NOT NULL, "user_id" integer NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_tasks_users_on_task_id_and_user_id" ON "tasks_users" ("task_id", "user_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_tasks_users_on_task_id_and_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_tasks_users_on_task_id_and_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_tasks_users_on_user_id_and_task_id" ON "tasks_users" ("user_id", "task_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150216112406"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_tasks_users_on_user_id_and_task_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_tasks_users_on_user_id_and_task_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_tasks_users_on_task_id_and_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_tasks_users_on_task_id_and_user_id' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "tasks_users" WHERE "tasks_users"."user_id" = ?  [["user_id", 1]]
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "tasks_users" WHERE "tasks_users"."user_id" = ?  [["user_id", 2]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "tasks_users" WHERE "tasks_users"."user_id" = ?  [["user_id", 3]]
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT "lists".* FROM "lists"[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks"
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "vlad@smarteditors.co.uk"], ["first_name", "Vlad"], ["last_name", "Radulescu"], ["created_at", "2015-02-16 11:24:28.925732"], ["updated_at", "2015-02-16 11:24:28.925732"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["email", "kevin@smarteditors.co.uk"], ["first_name", "Kevin"], ["last_name", "Karmody"], ["created_at", "2015-02-16 11:24:28.929066"], ["updated_at", "2015-02-16 11:24:28.929066"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("email", "first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["email", "hannah@smarteditors.co.uk"], ["first_name", "Hannah"], ["last_name", "Lewis"], ["created_at", "2015-02-16 11:24:28.931467"], ["updated_at", "2015-02-16 11:24:28.931467"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1  [["email", "vlad@smarteditors.co.uk"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "lists" ("id", "user_id", "name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["id", 1], ["user_id", 4], ["name", "Studio51 ToDo"], ["description", "Stuff needed to get this app up and running"], ["created_at", "2015-02-16 11:24:28.947319"], ["updated_at", "2015-02-16 11:24:28.947319"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "lists" ("id", "user_id", "name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["id", 2], ["user_id", 4], ["name", "Studio51 Booqmark.it"], ["description", "Stuff needed to get this app up and running"], ["created_at", "2015-02-16 11:24:28.950140"], ["updated_at", "2015-02-16 11:24:28.950140"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mList Load (0.2ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mList Load (0.1ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "tasks" ("user_id", "list_id", "priority", "name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["user_id", 4], ["list_id", 1], ["priority", 5], ["name", "Working app"], ["description", "Get the app working with Rails and the React gem"], ["created_at", "2015-02-16 11:24:28.959713"], ["updated_at", "2015-02-16 11:24:28.959713"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "tasks" ("user_id", "list_id", "priority", "name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 4], ["list_id", 2], ["priority", 5], ["name", "Finish prototype"], ["description", "Implement all required functionality for BETA testing"], ["created_at", "2015-02-16 11:24:28.962753"], ["updated_at", "2015-02-16 11:24:28.962753"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "tasks" ("user_id", "list_id", "priority", "name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["user_id", 4], ["list_id", 2], ["priority", 5], ["name", "Finish landing page"], ["description", "Finish landing page in order to start inviting people for BETA testing"], ["created_at", "2015-02-16 11:24:28.965119"], ["updated_at", "2015-02-16 11:24:28.965119"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for ::1 at 2015-02-16 11:24:31 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#index as HTML
+  Rendered layouts/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 106ms (Views: 104.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for ::1 at 2015-02-16 11:24:32 +0000
+
+
+Started GET "/assets/tasks.css?body=1" for ::1 at 2015-02-16 11:24:32 +0000
+
+
+Started GET "/assets/components/folders.js?body=1" for ::1 at 2015-02-16 11:24:32 +0000
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-02-16 11:24:32 +0000
+
+
+Started GET "/assets/components/to_do.js?body=1" for ::1 at 2015-02-16 11:24:32 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do.js?body=1" for ::1 at 2015-02-16 11:24:32 +0000
+
+
+Started GET "/assets/react_ujs.js?body=1" for ::1 at 2015-02-16 11:24:32 +0000
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-02-16 11:24:32 +0000
+
+
+Started GET "/assets/components.js?body=1" for ::1 at 2015-02-16 11:24:32 +0000
+
+
+Started GET "/assets/react.js?body=1" for ::1 at 2015-02-16 11:24:32 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_form.js?body=1" for ::1 at 2015-02-16 11:24:32 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_box.js?body=1" for ::1 at 2015-02-16 11:24:32 +0000
+
+
+Started GET "/assets/components/to_dos/_to_do_list.js?body=1" for ::1 at 2015-02-16 11:24:32 +0000
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-02-16 11:24:32 +0000
+
+
+Started GET "/lists" for ::1 at 2015-02-16 11:24:36 +0000
+Processing by ListsController#index as HTML
+  [1m[35mList Load (0.2ms)[0m  SELECT "lists".* FROM "lists"
+  Rendered lists/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 121ms (Views: 112.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/lists/1" for ::1 at 2015-02-16 11:24:40 +0000
+Processing by ListsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mList Load (1.5ms)[0m  [1mSELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered lists/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 122ms (Views: 112.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/lists/2/edit" for ::1 at 2015-02-16 11:24:53 +0000
+Processing by ListsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mList Load (0.2ms)[0m  SELECT  "lists".* FROM "lists" WHERE "lists"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered lists/_form.html.erb (82.9ms)
+  Rendered lists/edit.html.erb within layouts/application (87.6ms)
+Completed 200 OK in 159ms (Views: 157.3ms | ActiveRecord: 0.2ms)

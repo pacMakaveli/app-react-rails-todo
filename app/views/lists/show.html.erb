@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @list.user_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @list.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @list.description %>
+</p>
+
+<p>
+  <strong>Tasks count:</strong>
+  <%= @list.tasks_count %>
+</p>
+
+<p>
+  <strong>Completed:</strong>
+  <%= @list.completed %>
+</p>
+
+<p>
+  <strong>Completed at:</strong>
+  <%= @list.completed_at %>
+</p>
+
+<%= link_to 'Edit', edit_list_path(@list) %> |
+<%= link_to 'Back', lists_path %>

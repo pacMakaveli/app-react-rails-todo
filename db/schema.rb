@@ -11,37 +11,40 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150216073658) do
+ActiveRecord::Schema.define(version: 20150216112406) do
 
-  create_table "folders", force: true do |t|
-    t.string   "name"
+  create_table "lists", force: :cascade do |t|
+    t.integer  "user_id",                      null: false
+    t.string   "name",                         null: false
     t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer  "tasks_count",  default: 0
+    t.boolean  "completed",    default: false
+    t.datetime "completed_at"
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
-  create_table "tasks", force: true do |t|
-    t.integer  "owner_id"
-    t.integer  "list_id"
-    t.string   "name"
+  create_table "tasks", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "list_id",                      null: false
+    t.integer  "priority",     default: 1
+    t.string   "name",                         null: false
     t.text     "description"
-    t.integer  "priority"
-    t.datetime "finished_at"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "to_dos_count", default: 0
+    t.boolean  "completed",    default: false
+    t.datetime "completed_at"
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
-  create_table "to_dos", force: true do |t|
-    t.integer  "owner_id"
-    t.integer  "folder_id"
-    t.string   "name"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "tasks_users", id: false, force: :cascade do |t|
+    t.integer "task_id", null: false
+    t.integer "user_id", null: false
   end
 
-  create_table "users", force: true do |t|
+  add_index "tasks_users", ["task_id", "user_id"], name: "index_tasks_users_on_task_id_and_user_id"
+  add_index "tasks_users", ["user_id", "task_id"], name: "index_tasks_users_on_user_id_and_task_id"
+
+  create_table "users", force: :cascade do |t|
     t.string   "email"
     t.string   "first_name"
     t.string   "last_name"

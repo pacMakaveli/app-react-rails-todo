@@ -6,14 +6,53 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Folder.destroy_all
+User.destroy_all
+List.destroy_all
+Task.destroy_all
 
-Folder.create(
-  name: "Smartie",
-  description: "Smartie Project ToDo's"
+User.create(email: 'vlad@smarteditors.co.uk', first_name: 'Vlad', last_name: 'Radulescu')
+User.create(email: 'kevin@smarteditors.co.uk', first_name: 'Kevin', last_name: 'Karmody')
+User.create(email: 'hannah@smarteditors.co.uk', first_name: 'Hannah', last_name: 'Lewis')
+
+@user = User.find_by_email('vlad@smarteditors.co.uk')
+
+List.create(
+  id: 1,
+  user_id: @user.id,
+  name: 'Studio51 ToDo',
+  description: 'Stuff needed to get this app up and running',
 )
 
-Folder.create(
-  name: "Booqmark.it",
-  description: "Booqmark.it Project ToDo's"
+List.create(
+  id: 2,
+  user_id: @user.id,
+  name: 'Studio51 Booqmark.it',
+  description: 'Stuff needed to get this app up and running',
+)
+
+@todo = List.find_by_id(1)
+@booqmarkit = List.find_by_id(2)
+
+Task.create(
+  user_id: @user.id,
+  list_id: @todo.id,
+  priority: 5,
+  name: 'Working app',
+  description: 'Get the app working with Rails and the React gem'
+)
+
+Task.create(
+  user_id: @user.id,
+  list_id: @booqmarkit.id,
+  priority: 5,
+  name: 'Finish prototype',
+  description: 'Implement all required functionality for BETA testing'
+)
+
+Task.create(
+  user_id: @user.id,
+  list_id: @booqmarkit.id,
+  priority: 5,
+  name: 'Finish landing page',
+  description: 'Finish landing page in order to start inviting people for BETA testing'
 )

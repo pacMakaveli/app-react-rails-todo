@@ -12,12 +12,16 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :owner_id %><br>
-    <%= f.number_field :owner_id %>
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
   </div>
   <div class="field">
     <%= f.label :list_id %><br>
     <%= f.number_field :list_id %>
+  </div>
+  <div class="field">
+    <%= f.label :priority %><br>
+    <%= f.number_field :priority %>
   </div>
   <div class="field">
     <%= f.label :name %><br>
@@ -28,12 +32,12 @@
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :priority %><br>
-    <%= f.number_field :priority %>
+    <%= f.label :completed %><br>
+    <%= f.check_box :completed %>
   </div>
   <div class="field">
-    <%= f.label :finished_at %><br>
-    <%= f.datetime_select :finished_at %>
+    <%= f.label :completed_at %><br>
+    <%= f.datetime_select :completed_at %>
   </div>
   <div class="actions">
     <%= f.submit %>
