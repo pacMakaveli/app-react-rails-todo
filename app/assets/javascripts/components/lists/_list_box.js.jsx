@@ -1,3 +1,7 @@
+/**
+ * @jsx React.DOM
+ */
+
 var ListBox = React.createClass({
   loadListsFromServer: function() {
     $.ajax({
@@ -12,16 +16,16 @@ var ListBox = React.createClass({
     });
   },
 
-  handleListSubmit: function(comment) {
-    var comments = this.state.data;
-        comments.push(comment)
+  handleListSubmit: function(list) {
+    var lists = this.state.data;
+        lists.push(list);
 
-    this.setState({ data: comments }, function() {
+    this.setState({ data: lists }, function() {
       $.ajax({
         url: this.props.url,
         dataType: 'json',
         type: 'POST',
-        data: { list: comment },
+        data: { list: list },
         success: function(data) {
           this.setState({ data: data });
         }.bind(this),
@@ -38,14 +42,13 @@ var ListBox = React.createClass({
 
   componentDidMount: function() {
     this.loadListsFromServer();
-    setInterval(this.loadListsFromServer, this.props.pollInterval);
   },
 
   render: function() {
     return(
       <div className="list-box">
         <ListItems data={ this.state.data } />
-        <ListForm onTaskSubmit={ this.handleListSubmit } />
+        <ListForm onListSubmit={ this.handleListSubmit } />
       </div>
     );
   }

@@ -2,6 +2,12 @@ Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   config.react.variant = :development
+  config.react.addons = true
+
+  config.react.max_renderers = 10
+  config.react.timeout = 20
+  config.react.react_js = lambda {File.read(::Rails.application.assets.resolve('react.js'))}
+  config.react.component_filenames = ['components.js']
 
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development

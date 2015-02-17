@@ -1,3 +1,7 @@
+/**
+ * @jsx React.DOM
+ */
+
 var ListForm = React.createClass({
   handleSubmit: function(e) {
     e.preventDefault();
@@ -9,7 +13,7 @@ var ListForm = React.createClass({
       return;
     }
 
-    this.props.onTaskSubmit({
+    this.props.onListSubmit({
       name: name,
       description: description
     });
@@ -22,10 +26,10 @@ var ListForm = React.createClass({
     return(
       <form className="list-form" onSubmit={ this.handleSubmit }>
 
-        <input type="text" placeholder="Your name" ref="name" />
-        <input type="text" placeholder="Say something..." ref="description" />
+        <input type="text" placeholder="To do name" ref="name" />
+        <textarea placeholder="To do description..." ref="description"></textarea>
 
-        <input type="submit" value="Post" />
+        <input type="submit" value="Create" />
       </form>
     );
   }
