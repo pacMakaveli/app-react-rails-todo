@@ -39,3 +39,5 @@ gem 'spring',        group: :development
 gem 'responders'
 gem 'active_model_serializers'
 gem 'react-rails', '~> 1.0.0.pre', github: 'reactjs/react-rails'
+
+gem 'font-awesome-rails'

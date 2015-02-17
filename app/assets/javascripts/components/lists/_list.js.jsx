@@ -11,12 +11,19 @@ var List = React.createClass({
         <div className="grid-cell grid-cell-sm-11">
           <div className="list">
             <div className="grid">
-              <div className="list-cell-name">
-                <h2 className="list-name">{ this.props.name }</h2>
+              <div className="grid-cell grid-cell-sm-9">
+                <div className="list-cell-name">
+                  <h2 className="list-name">{ this.props.name }</h2>
+                </div>
+
+                <div className="list-cell-user">
+                  <span className="list-user">{ this.props.owner }</span>
+                </div>
               </div>
 
-              <div className="list-cell-user">
-                <span className="list-user">{ this.props.owner }</span>
+              <div className="grid-cell grid-cell-sm-3">
+                <a href="" className="button"><i className="fa fa-pencil"></i></a>
+                <a href="" className="button"><i className="fa fa-trash-o"></i></a>
               </div>
             </div>
 

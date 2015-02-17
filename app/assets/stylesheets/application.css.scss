@@ -10,6 +10,7 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require font-awesome
  *= require_tree .
  *= require_self
  */
@@ -80,4 +81,46 @@ $default-border-size: 2px;
 .list p {
   font-size: 12px;
   margin: $default-spacing 0 0;
+}
+
+form.list-form {
+  border: 2px solid #e6e9ed;
+  padding: 15px;
+}
+
+form.list-form input {
+  border: none;
+  font-family: "Raleway";
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+form.list-form textarea {
+  border: none;
+  font-family: "Raleway";
+  font-size: 12px;
+  color: nth($darkgray, 1);
+  margin-top: 15px;
+  resize: none;
+  vertical-align: top;
+  width: 100%;
+}
+
+form.list-form input[type="submit"] {
+  border: none;
+  color: #fff;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 2px;
+  background-color: nth($bluejeans, 1);
+
+  &:hover {
+    background-color: nth($bluejeans, 2);
+  }
+}
+
+a i.fa {
+  border: 1px solid red;
 }
