@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ToDoList</title>
+  <title>To Do app</title>
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
   <%= csrf_meta_tags %>
+
 </head>
 <body>
 
-<%= yield %>
+  <div class="grid-container">
+    <div class="grid">
+
+      <%= yield %>
+
+    </div>
+  </div>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 
 </body>
 </html>
