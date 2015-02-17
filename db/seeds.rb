@@ -10,9 +10,9 @@ User.destroy_all
 List.destroy_all
 Task.destroy_all
 
-User.create(email: 'vlad@smarteditors.co.uk', first_name: 'Vlad', last_name: 'Radulescu')
-User.create(email: 'kevin@smarteditors.co.uk', first_name: 'Kevin', last_name: 'Karmody')
-User.create(email: 'hannah@smarteditors.co.uk', first_name: 'Hannah', last_name: 'Lewis')
+User.create(id: 1, email: 'vlad@smarteditors.co.uk', first_name: 'Vlad', last_name: 'Radulescu')
+User.create(id: 2, email: 'kevin@smarteditors.co.uk', first_name: 'Kevin', last_name: 'Karmody')
+User.create(id: 3, email: 'hannah@smarteditors.co.uk', first_name: 'Hannah', last_name: 'Lewis')
 
 @user = User.find_by_email('vlad@smarteditors.co.uk')
 
