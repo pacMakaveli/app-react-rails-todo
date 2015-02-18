@@ -32,6 +32,7 @@ $darkgray:    #656D78, #434A54; // black
 
 $default-spacing: 15px;
 $default-border-size: 2px;
+$default-border-radius: 2px;
 
 .grid-container {
   padding: $default-spacing 0;
@@ -84,7 +85,7 @@ $default-border-size: 2px;
 }
 
 form.list-form {
-  border: 2px solid #e6e9ed;
+  border: $default-border-size solid nth($bluejeans, 1);
   padding: 15px;
 }
 
@@ -113,7 +114,7 @@ form.list-form input[type="submit"] {
   font-weight: normal;
   font-size: 14px;
   padding: 10px 15px;
-  border-radius: 2px;
+  border-radius: $default-border-radius;
   background-color: nth($bluejeans, 1);
 
   &:hover {
@@ -123,4 +124,25 @@ form.list-form input[type="submit"] {
 
 a i.fa {
   border: 1px solid red;
+}
+
+.search {
+  margin-bottom: 15px;
+}
+
+.search input {
+  border: $default-border-size solid nth($grass, 1);
+  width: 100%;
+  box-sizing: border-box;
+  padding: $default-spacing;
+  border-radius: $default-border-radius;
+  color: nth($darkgray, 1);
+}
+
+.list-user {
+  display: none;
+  margin-left: 10px;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: italic;
 }
